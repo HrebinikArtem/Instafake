@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		542CE21F234746D90047E959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE21E234746D90047E959 /* AppDelegate.swift */; };
-		542CE221234746D90047E959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE220234746D90047E959 /* ViewController.swift */; };
-		542CE224234746D90047E959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542CE222234746D90047E959 /* Main.storyboard */; };
 		542CE226234746DA0047E959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542CE225234746DA0047E959 /* Assets.xcassets */; };
 		542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542CE227234746DA0047E959 /* LaunchScreen.storyboard */; };
 		542CE2312347476C0047E959 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 542CE2302347476C0047E959 /* .gitignore */; };
 		542CE2332347490D0047E959 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE2322347490D0047E959 /* MainRouter.swift */; };
+		542CE23823474D620047E959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE23623474D620047E959 /* ViewController.swift */; };
+		542CE23923474D620047E959 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542CE23723474D620047E959 /* ViewController.xib */; };
+		542CE23D234761740047E959 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE23C234761740047E959 /* StartRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		542CE21B234746D90047E959 /* InstaFake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542CE21E234746D90047E959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		542CE220234746D90047E959 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		542CE223234746D90047E959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		542CE225234746DA0047E959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542CE228234746DA0047E959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542CE22A234746DA0047E959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542CE2302347476C0047E959 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		542CE2322347490D0047E959 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		542CE23623474D620047E959 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		542CE23723474D620047E959 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		542CE23C234761740047E959 /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,8 @@
 			children = (
 				542CE21E234746D90047E959 /* AppDelegate.swift */,
 				542CE234234749110047E959 /* Routers */,
-				542CE220234746D90047E959 /* ViewController.swift */,
-				542CE222234746D90047E959 /* Main.storyboard */,
-				542CE225234746DA0047E959 /* Assets.xcassets */,
-				542CE227234746DA0047E959 /* LaunchScreen.storyboard */,
-				542CE22A234746DA0047E959 /* Info.plist */,
+				542CE23523474D3F0047E959 /* Screens */,
+				542CE23B23474E400047E959 /* Resources */,
 			);
 			path = InstaFake;
 			sourceTree = "<group>";
@@ -74,8 +73,36 @@
 			isa = PBXGroup;
 			children = (
 				542CE2322347490D0047E959 /* MainRouter.swift */,
+				542CE23C234761740047E959 /* StartRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		542CE23523474D3F0047E959 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				542CE23A23474E280047E959 /* ViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		542CE23A23474E280047E959 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				542CE23623474D620047E959 /* ViewController.swift */,
+				542CE23723474D620047E959 /* ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		542CE23B23474E400047E959 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				542CE225234746DA0047E959 /* Assets.xcassets */,
+				542CE227234746DA0047E959 /* LaunchScreen.storyboard */,
+				542CE22A234746DA0047E959 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,10 +163,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542CE23923474D620047E959 /* ViewController.xib in Resources */,
 				542CE2312347476C0047E959 /* .gitignore in Resources */,
 				542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */,
 				542CE226234746DA0047E959 /* Assets.xcassets in Resources */,
-				542CE224234746D90047E959 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542CE221234746D90047E959 /* ViewController.swift in Sources */,
+				542CE23823474D620047E959 /* ViewController.swift in Sources */,
 				542CE21F234746D90047E959 /* AppDelegate.swift in Sources */,
 				542CE2332347490D0047E959 /* MainRouter.swift in Sources */,
+				542CE23D234761740047E959 /* StartRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		542CE222234746D90047E959 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				542CE223234746D90047E959 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		542CE227234746DA0047E959 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VTG976PZS;
-				INFOPLIST_FILE = InstaFake/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InstaFake/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VTG976PZS;
-				INFOPLIST_FILE = InstaFake/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InstaFake/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
