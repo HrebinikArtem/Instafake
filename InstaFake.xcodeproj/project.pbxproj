@@ -13,6 +13,7 @@
 		542CE226234746DA0047E959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542CE225234746DA0047E959 /* Assets.xcassets */; };
 		542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542CE227234746DA0047E959 /* LaunchScreen.storyboard */; };
 		542CE2312347476C0047E959 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 542CE2302347476C0047E959 /* .gitignore */; };
+		542CE2332347490D0047E959 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE2322347490D0047E959 /* MainRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		542CE228234746DA0047E959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542CE22A234746DA0047E959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542CE2302347476C0047E959 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		542CE2322347490D0047E959 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				542CE21E234746D90047E959 /* AppDelegate.swift */,
+				542CE234234749110047E959 /* Routers */,
 				542CE220234746D90047E959 /* ViewController.swift */,
 				542CE222234746D90047E959 /* Main.storyboard */,
 				542CE225234746DA0047E959 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				542CE22A234746DA0047E959 /* Info.plist */,
 			);
 			path = InstaFake;
+			sourceTree = "<group>";
+		};
+		542CE234234749110047E959 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				542CE2322347490D0047E959 /* MainRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			files = (
 				542CE221234746D90047E959 /* ViewController.swift in Sources */,
 				542CE21F234746D90047E959 /* AppDelegate.swift in Sources */,
+				542CE2332347490D0047E959 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
