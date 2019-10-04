@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123FDEC15BF5CBFD09A64236 /* Pods_InstaFake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A66CE1B186B5BFC2EE458B0 /* Pods_InstaFake.framework */; };
 		542CE21F234746D90047E959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE21E234746D90047E959 /* AppDelegate.swift */; };
 		542CE226234746DA0047E959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542CE225234746DA0047E959 /* Assets.xcassets */; };
 		542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542CE227234746DA0047E959 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A66CE1B186B5BFC2EE458B0 /* Pods_InstaFake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A92AC38F6B1C9A8B14AB06 /* Pods-InstaFake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFake.release.xcconfig"; path = "Target Support Files/Pods-InstaFake/Pods-InstaFake.release.xcconfig"; sourceTree = "<group>"; };
 		542CE21B234746D90047E959 /* InstaFake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542CE21E234746D90047E959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542CE225234746DA0047E959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		542CE2452347638A0047E959 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		542CE2462347638A0047E959 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		542CE24923476A520047E959 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B2956BEA32B05B2D343B10D /* Pods-InstaFake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFake.debug.xcconfig"; path = "Target Support Files/Pods-InstaFake/Pods-InstaFake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +45,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123FDEC15BF5CBFD09A64236 /* Pods_InstaFake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3672D1EE50AFEE7FBD0916AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B2956BEA32B05B2D343B10D /* Pods-InstaFake.debug.xcconfig */,
+				45A92AC38F6B1C9A8B14AB06 /* Pods-InstaFake.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		542CE212234746D90047E959 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +69,8 @@
 				542CE24923476A520047E959 /* GoogleService-Info.plist */,
 				542CE21D234746D90047E959 /* InstaFake */,
 				542CE21C234746D90047E959 /* Products */,
+				3672D1EE50AFEE7FBD0916AB /* Pods */,
+				8688B8A7848A55025CB50427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +139,14 @@
 			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
+		8688B8A7848A55025CB50427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A66CE1B186B5BFC2EE458B0 /* Pods_InstaFake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542CE22D234746DA0047E959 /* Build configuration list for PBXNativeTarget "InstaFake" */;
 			buildPhases = (
+				08E4C8F6506FA16E37DF3C61 /* [CP] Check Pods Manifest.lock */,
 				542CE217234746D90047E959 /* Sources */,
 				542CE218234746D90047E959 /* Frameworks */,
 				542CE219234746D90047E959 /* Resources */,
+				D1C8885CD5735C1399E22AAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +217,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08E4C8F6506FA16E37DF3C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaFake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C8885CD5735C1399E22AAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaFake/Pods-InstaFake-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaFake/Pods-InstaFake-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaFake/Pods-InstaFake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		542CE217234746D90047E959 /* Sources */ = {
@@ -336,6 +405,7 @@
 		};
 		542CE22E234746DA0047E959 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2956BEA32B05B2D343B10D /* Pods-InstaFake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +424,7 @@
 		};
 		542CE22F234746DA0047E959 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A92AC38F6B1C9A8B14AB06 /* Pods-InstaFake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
