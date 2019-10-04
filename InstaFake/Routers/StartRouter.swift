@@ -9,8 +9,10 @@
 import UIKit
 
 final class StartRouter {
+    private init() {}
     
     static func goToRegisterScreen(from source: UIViewController) {
-        
+        let vc = RegisterViewController()
+        source.navigationController?.pushViewController(vc, animated: true)
     }
 }

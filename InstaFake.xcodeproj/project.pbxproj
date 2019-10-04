@@ -15,6 +15,9 @@
 		542CE23823474D620047E959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE23623474D620047E959 /* ViewController.swift */; };
 		542CE23923474D620047E959 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542CE23723474D620047E959 /* ViewController.xib */; };
 		542CE23D234761740047E959 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE23C234761740047E959 /* StartRouter.swift */; };
+		542CE2472347638A0047E959 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE2452347638A0047E959 /* RegisterViewController.swift */; };
+		542CE2482347638A0047E959 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542CE2462347638A0047E959 /* RegisterViewController.xib */; };
+		542CE24A23476A530047E959 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 542CE24923476A520047E959 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		542CE23623474D620047E959 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		542CE23723474D620047E959 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		542CE23C234761740047E959 /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		542CE2452347638A0047E959 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		542CE2462347638A0047E959 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		542CE24923476A520047E959 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				542CE2302347476C0047E959 /* .gitignore */,
+				542CE24923476A520047E959 /* GoogleService-Info.plist */,
 				542CE21D234746D90047E959 /* InstaFake */,
 				542CE21C234746D90047E959 /* Products */,
 			);
@@ -81,18 +88,19 @@
 		542CE23523474D3F0047E959 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				542CE23A23474E280047E959 /* ViewController */,
+				542CE244234763670047E959 /* RegisterViewController */,
+				542CE23A23474E280047E959 /* Start */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		542CE23A23474E280047E959 /* ViewController */ = {
+		542CE23A23474E280047E959 /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				542CE23623474D620047E959 /* ViewController.swift */,
 				542CE23723474D620047E959 /* ViewController.xib */,
 			);
-			path = ViewController;
+			path = Start;
 			sourceTree = "<group>";
 		};
 		542CE23B23474E400047E959 /* Resources */ = {
@@ -103,6 +111,15 @@
 				542CE22A234746DA0047E959 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		542CE244234763670047E959 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				542CE2452347638A0047E959 /* RegisterViewController.swift */,
+				542CE2462347638A0047E959 /* RegisterViewController.xib */,
+			);
+			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				542CE23923474D620047E959 /* ViewController.xib in Resources */,
+				542CE2482347638A0047E959 /* RegisterViewController.xib in Resources */,
 				542CE2312347476C0047E959 /* .gitignore in Resources */,
 				542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */,
 				542CE226234746DA0047E959 /* Assets.xcassets in Resources */,
+				542CE24A23476A530047E959 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				542CE23823474D620047E959 /* ViewController.swift in Sources */,
+				542CE2472347638A0047E959 /* RegisterViewController.swift in Sources */,
 				542CE21F234746D90047E959 /* AppDelegate.swift in Sources */,
 				542CE2332347490D0047E959 /* MainRouter.swift in Sources */,
 				542CE23D234761740047E959 /* StartRouter.swift in Sources */,

@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         
         Decorator.decorate(vc: self)
         addtargets()
+        
+        navigationController?.navigationBar.isHidden = true
     }
     
     private func addtargets() {
@@ -26,7 +28,10 @@ class ViewController: UIViewController {
     }
     
     @objc private func loginButtonTapped(sender: UIButton) {}
-    @objc private func registerButtonTapped(sender: UIButton) {}
+    
+    @objc private func registerButtonTapped(sender: UIButton) {
+        StartRouter.goToRegisterScreen(from: self)
+    }
 }
 
 
@@ -42,6 +47,7 @@ extension ViewController {
             vc.registerButton.layer.borderColor = UIColor.white.cgColor
             vc.registerButton.layer.cornerRadius = 8
             vc.registerButton.layer.borderWidth = 1
+            
         }
     }
 }

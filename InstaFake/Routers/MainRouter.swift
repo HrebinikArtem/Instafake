@@ -12,6 +12,8 @@ final class MainRouter {
     func root(_ window: inout UIWindow?) {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
+        
+        let rootVC = ViewController()
+        window?.rootViewController = UINavigationController.init(rootViewController: rootVC)
     }
 }
