@@ -11,18 +11,38 @@ import UIKit
 class RegisterViewController: UIViewController {
 
     @IBOutlet private weak var registerButton: UIButton!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var usernameTextField: UITextField!
+    
+    private var registerModel = RegisterModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Decorator.decorate(vc: self)
         addTargets()
+        delegating()
+    }
+    
+    private func delegating() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        nameTextField.delegate = self
+        usernameTextField.delegate = self
     }
     
     private func addTargets() {
         registerButton.addTarget(self, action: #selector(registerButtonTapped(sender:)), for: .touchUpInside)
     }
     
-    @objc private func registerButtonTapped(sender: UIButton) {}
+    @objc private func registerButtonTapped(sender: UIButton) {
+        guard registerModel.isFilled else {
+            showAlert(with: "Ошибка!", and: "Заполните поля")
+            return
+        }
+        showAlert(with: "Успех!", and: "регистрация прошла успешно")
+    }
 }
 
 extension RegisterViewController {
@@ -35,4 +55,9 @@ extension RegisterViewController {
             vc.registerButton.layer.cornerRadius = 8
         }
     }
+}
+
+
+extension RegisterViewController: UITextFieldDelegate {
+    
 }
