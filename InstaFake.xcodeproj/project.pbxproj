@@ -22,6 +22,7 @@
 		54F057ED2349CC4000B60AED /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057EC2349CC4000B60AED /* RegisterModel.swift */; };
 		54F057F22349D41E00B60AED /* Extension+UIviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F12349D41E00B60AED /* Extension+UIviewController.swift */; };
 		54F057F52349EA0300B60AED /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F42349EA0300B60AED /* AuthManager.swift */; };
+		54F057F7234B3DE100B60AED /* RegisterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F6234B3DE100B60AED /* RegisterError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		54F057EC2349CC4000B60AED /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		54F057F12349D41E00B60AED /* Extension+UIviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIviewController.swift"; sourceTree = "<group>"; };
 		54F057F42349EA0300B60AED /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		54F057F6234B3DE100B60AED /* RegisterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterError.swift; sourceTree = "<group>"; };
 		7B2956BEA32B05B2D343B10D /* Pods-InstaFake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFake.debug.xcconfig"; path = "Target Support Files/Pods-InstaFake/Pods-InstaFake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				54F057EC2349CC4000B60AED /* RegisterModel.swift */,
+				54F057F6234B3DE100B60AED /* RegisterError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				542CE2332347490D0047E959 /* MainRouter.swift in Sources */,
 				54F057F22349D41E00B60AED /* Extension+UIviewController.swift in Sources */,
 				542CE23D234761740047E959 /* StartRouter.swift in Sources */,
+				54F057F7234B3DE100B60AED /* RegisterError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
