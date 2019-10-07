@@ -21,6 +21,7 @@
 		542CE24A23476A530047E959 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 542CE24923476A520047E959 /* GoogleService-Info.plist */; };
 		54F057ED2349CC4000B60AED /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057EC2349CC4000B60AED /* RegisterModel.swift */; };
 		54F057F22349D41E00B60AED /* Extension+UIviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F12349D41E00B60AED /* Extension+UIviewController.swift */; };
+		54F057F52349EA0300B60AED /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F42349EA0300B60AED /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		542CE24923476A520047E959 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54F057EC2349CC4000B60AED /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		54F057F12349D41E00B60AED /* Extension+UIviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIviewController.swift"; sourceTree = "<group>"; };
+		54F057F42349EA0300B60AED /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		7B2956BEA32B05B2D343B10D /* Pods-InstaFake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFake.debug.xcconfig"; path = "Target Support Files/Pods-InstaFake/Pods-InstaFake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 			children = (
 				542CE2302347476C0047E959 /* .gitignore */,
 				542CE24923476A520047E959 /* GoogleService-Info.plist */,
+				54F057F32349E9E000B60AED /* Managers */,
 				54F057F02349D3F400B60AED /* Extensions */,
 				54F057EB2349CC2700B60AED /* Models */,
 				542CE21D234746D90047E959 /* InstaFake */,
@@ -158,6 +161,14 @@
 				54F057F12349D41E00B60AED /* Extension+UIviewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		54F057F32349E9E000B60AED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				54F057F42349EA0300B60AED /* AuthManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		8688B8A7848A55025CB50427 /* Frameworks */ = {
@@ -287,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				542CE23823474D620047E959 /* ViewController.swift in Sources */,
+				54F057F52349EA0300B60AED /* AuthManager.swift in Sources */,
 				542CE2472347638A0047E959 /* RegisterViewController.swift in Sources */,
 				54F057ED2349CC4000B60AED /* RegisterModel.swift in Sources */,
 				542CE21F234746D90047E959 /* AppDelegate.swift in Sources */,
