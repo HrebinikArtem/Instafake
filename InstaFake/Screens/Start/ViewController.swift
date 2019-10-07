@@ -13,13 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak private var loginButton: UIButton!
     @IBOutlet weak private var registerButton: UIButton!
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Decorator.decorate(vc: self)
         addtargets()
-        
-        navigationController?.navigationBar.isHidden = true
     }
     
     private func addtargets() {
@@ -27,10 +30,12 @@ class ViewController: UIViewController {
         registerButton.addTarget(self, action: #selector(registerButtonTapped(sender:)), for: .touchUpInside)
     }
     
-    @objc private func loginButtonTapped(sender: UIButton) {}
+    @objc private func loginButtonTapped(sender: UIButton) {
+        StartRouter.shared.goToLoginScreen(from: self)
+    }
     
     @objc private func registerButtonTapped(sender: UIButton) {
-        StartRouter.goToRegisterScreen(from: self)
+        StartRouter.shared.goToRegisterScreen(from: self)
     }
 }
 

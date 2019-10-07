@@ -9,6 +9,7 @@
 import Foundation
 
 class RegisterModel {
+    var id:String
     var email: String?
     var name: String?
     var username: String?
@@ -22,5 +23,25 @@ class RegisterModel {
             !(password ?? "").isEmpty else { return false }
         
         return true
+    }
+    
+    var dict: [String: Any] {
+        return [
+            Keys.email.rawValue: email ?? "",
+            Keys.name.rawValue: name ?? "",
+            Keys.username.rawValue: username ?? "",
+            Keys.password.rawValue: password ?? ""
+        ]
+    }
+    
+    init() {
+        self.id = UUID.init().uuidString
+    }
+}
+
+
+extension RegisterModel {
+    private enum Keys: String {
+        case email, name, username, password
     }
 }

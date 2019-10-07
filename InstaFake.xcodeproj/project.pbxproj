@@ -26,6 +26,8 @@
 		54F057F9234B446E00B60AED /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F8234B446E00B60AED /* AuthError.swift */; };
 		54F057FC234B478500B60AED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057FA234B478500B60AED /* LoginViewController.swift */; };
 		54F057FD234B478500B60AED /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F057FB234B478500B60AED /* LoginViewController.xib */; };
+		54F05801234B76A600B60AED /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057FF234B76A600B60AED /* FeedViewController.swift */; };
+		54F05802234B76A600B60AED /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F05800234B76A600B60AED /* FeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		54F057F8234B446E00B60AED /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		54F057FA234B478500B60AED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		54F057FB234B478500B60AED /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		54F057FF234B76A600B60AED /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		54F05800234B76A600B60AED /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		7B2956BEA32B05B2D343B10D /* Pods-InstaFake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFake.debug.xcconfig"; path = "Target Support Files/Pods-InstaFake/Pods-InstaFake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,7 @@
 				542CE23A23474E280047E959 /* Start */,
 				54F057FE234B479300B60AED /* LoginViewController */,
 				542CE244234763670047E959 /* RegisterViewController */,
+				54F05803234B76B500B60AED /* FeedViewController */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -189,6 +194,15 @@
 				54F057FB234B478500B60AED /* LoginViewController.xib */,
 			);
 			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		54F05803234B76B500B60AED /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54F057FF234B76A600B60AED /* FeedViewController.swift */,
+				54F05800234B76A600B60AED /* FeedViewController.xib */,
+			);
+			path = FeedViewController;
 			sourceTree = "<group>";
 		};
 		8688B8A7848A55025CB50427 /* Frameworks */ = {
@@ -261,6 +275,7 @@
 			files = (
 				542CE23923474D620047E959 /* ViewController.xib in Resources */,
 				542CE2482347638A0047E959 /* RegisterViewController.xib in Resources */,
+				54F05802234B76A600B60AED /* FeedViewController.xib in Resources */,
 				542CE2312347476C0047E959 /* .gitignore in Resources */,
 				542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */,
 				542CE226234746DA0047E959 /* Assets.xcassets in Resources */,
@@ -328,6 +343,7 @@
 				54F057F22349D41E00B60AED /* Extension+UIviewController.swift in Sources */,
 				542CE23D234761740047E959 /* StartRouter.swift in Sources */,
 				54F057F7234B3DE100B60AED /* RegisterError.swift in Sources */,
+				54F05801234B76A600B60AED /* FeedViewController.swift in Sources */,
 				54F057FC234B478500B60AED /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

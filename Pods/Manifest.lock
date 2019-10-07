@@ -1,4 +1,5 @@
 PODS:
+  - ARSLineProgress (3.1.0)
   - Firebase/Auth (6.4.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.2.0)
@@ -77,6 +78,7 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - ARSLineProgress
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -84,6 +86,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ARSLineProgress
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -99,6 +102,7 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+  ARSLineProgress: 60778657c69491796c3faf5b834c72924c405833
   Firebase: 9445469655a98e9010737f4bc4720e5bda465873
   FirebaseAnalytics: 69fe25866d2ec87c6f02d72c3c9a82bce9c065a0
   FirebaseAuth: 68cfa47997f53d29ce978e7a615fb78d7925fcbe
@@ -113,6 +117,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 9e5eca97ab16b206582a7f62e120c377bc1b20f9
+PODFILE CHECKSUM: 9ea2f1e52d5a8f1b9fea90a9b1c5f4992ab43b11
 
 COCOAPODS: 1.7.4

@@ -9,10 +9,16 @@
 import UIKit
 
 final class StartRouter {
+    static let shared = StartRouter()
     private init() {}
     
-    static func goToRegisterScreen(from source: UIViewController) {
+    func goToRegisterScreen(from source: UIViewController) {
         let vc = RegisterViewController()
+        source.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func goToLoginScreen(from source: UIViewController) {
+        let vc = LoginViewController()
         source.navigationController?.pushViewController(vc, animated: true)
     }
 }

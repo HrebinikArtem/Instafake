@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ARSLineProgress
 
 class RegisterViewController: UIViewController {
 
@@ -18,22 +19,30 @@ class RegisterViewController: UIViewController {
     
     private var registerModel = RegisterModel()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        Decorator.decorate(vc: self)
-        addTargets()
-        delegating()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    private func delegating() {
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        nameTextField.delegate = self
-        usernameTextField.delegate = self
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Decorator.decorate(vc: self)
+        addTargets()
+        updateRegisterButtonStatus()
+        title = "Регистрация" 
     }
     
     private func addTargets() {
         registerButton.addTarget(self, action: #selector(registerButtonTapped(sender:)), for: .touchUpInside)
+        emailTextField.addTarget(self, action: #selector(emailTextChanged(sender:)), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(passwordTextChanged(sender:)), for: .editingChanged)
+        nameTextField.addTarget(self, action: #selector(nameTextChanged(sender:)), for: .editingChanged)
+        usernameTextField.addTarget(self, action: #selector(usernameTextChanged(sender:)), for: .editingChanged)
+    }
+    
+    private func updateRegisterButtonStatus() {
+        registerButton.isEnabled = registerModel.isFilled
     }
     
     @objc private func registerButtonTapped(sender: UIButton) {
@@ -41,7 +50,36 @@ class RegisterViewController: UIViewController {
             showAlert(with: "Ошибка!", and: "Заполните поля")
             return
         }
-        showAlert(with: "Успех!", and: "регистрация прошла успешно")
+        
+        ARSLineProgress.show()
+        Authmanager.shared.register(with: registerModel) { [weak self] result in
+        
+            ARSLineProgress.hide()
+            
+            switch result {
+            case .success(_):
+                self?.showAlert(with: "Успех!", and: "Вы успешно зарегестрированы!")
+            case .failure(let error):
+                self?.showAlert(with: "Error!", and: "Descrpiption:" + error.localizedDescription)
+            }
+        }
+    }
+    
+    @objc private func emailTextChanged(sender: UITextField) {
+        registerModel.email = sender.text ?? ""
+        updateRegisterButtonStatus()
+    }
+    @objc private func passwordTextChanged(sender: UITextField) {
+        registerModel.password = sender.text ?? ""
+        updateRegisterButtonStatus()
+    }
+    @objc private func nameTextChanged(sender: UITextField) {
+        registerModel.name = sender.text ?? ""
+        updateRegisterButtonStatus()
+    }
+    @objc private func usernameTextChanged(sender: UITextField) {
+        registerModel.username = sender.text ?? ""
+        updateRegisterButtonStatus()
     }
 }
 
@@ -55,9 +93,4 @@ extension RegisterViewController {
             vc.registerButton.layer.cornerRadius = 8
         }
     }
-}
-
-
-extension RegisterViewController: UITextFieldDelegate {
-    
 }

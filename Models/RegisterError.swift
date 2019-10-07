@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+enum RegisterError {
+    case invalidEmail
+    case unknownError
+    case serverError
+}
+
+extension RegisterError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .invalidEmail:
+            return NSLocalizedString("email_is_not_valid", comment: "")
+        case .unknownError, .serverError:
+            return NSLocalizedString("server_error", comment: "")
+        }
+    }
+}
