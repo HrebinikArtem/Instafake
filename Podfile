@@ -10,5 +10,6 @@ target 'InstaFake' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'ARSLineProgress'
+  pod 'Locksmith'
 
 end

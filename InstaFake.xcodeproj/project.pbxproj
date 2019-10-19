@@ -19,6 +19,19 @@
 		542CE2472347638A0047E959 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CE2452347638A0047E959 /* RegisterViewController.swift */; };
 		542CE2482347638A0047E959 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542CE2462347638A0047E959 /* RegisterViewController.xib */; };
 		542CE24A23476A530047E959 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 542CE24923476A520047E959 /* GoogleService-Info.plist */; };
+		5430647223535D79005DD7A3 /* SecureStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430647123535D79005DD7A3 /* SecureStorageManager.swift */; };
+		5430647423536382005DD7A3 /* StorageManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430647323536382005DD7A3 /* StorageManagerError.swift */; };
+		546BF67623530AD80083B2ED /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546BF67523530AD80083B2ED /* UserHeaderView.xib */; };
+		546BF67823530CBD0083B2ED /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BF67723530CBD0083B2ED /* UserHeaderView.swift */; };
+		546BF67B235314470083B2ED /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BF67A235314470083B2ED /* NibLoadable.swift */; };
+		546BF67D235316370083B2ED /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BF67C235316370083B2ED /* Extension+UIView.swift */; };
+		54B8E1A1235335C20094C600 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8E19F235335C20094C600 /* CreatePostViewController.swift */; };
+		54B8E1A2235335C20094C600 /* CreatePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B8E1A0235335C20094C600 /* CreatePostViewController.xib */; };
+		54B8E1A42353375C0094C600 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8E1A32353375C0094C600 /* PostManager.swift */; };
+		54B8E1A623533BBE0094C600 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8E1A523533BBE0094C600 /* FirebaseManager.swift */; };
+		54B8E1A82353448A0094C600 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8E1A72353448A0094C600 /* Post.swift */; };
+		54B8E1AA235347D00094C600 /* Extension+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8E1A9235347D00094C600 /* Extension+Encodable.swift */; };
+		54B8E1AC23534AC70094C600 /* PostManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8E1AB23534AC70094C600 /* PostManagerError.swift */; };
 		54F057ED2349CC4000B60AED /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057EC2349CC4000B60AED /* RegisterModel.swift */; };
 		54F057F22349D41E00B60AED /* Extension+UIviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F12349D41E00B60AED /* Extension+UIviewController.swift */; };
 		54F057F52349EA0300B60AED /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F057F42349EA0300B60AED /* AuthManager.swift */; };
@@ -46,6 +59,19 @@
 		542CE2452347638A0047E959 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		542CE2462347638A0047E959 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		542CE24923476A520047E959 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5430647123535D79005DD7A3 /* SecureStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorageManager.swift; sourceTree = "<group>"; };
+		5430647323536382005DD7A3 /* StorageManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManagerError.swift; sourceTree = "<group>"; };
+		546BF67523530AD80083B2ED /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
+		546BF67723530CBD0083B2ED /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		546BF67A235314470083B2ED /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		546BF67C235316370083B2ED /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		54B8E19F235335C20094C600 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		54B8E1A0235335C20094C600 /* CreatePostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePostViewController.xib; sourceTree = "<group>"; };
+		54B8E1A32353375C0094C600 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		54B8E1A523533BBE0094C600 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		54B8E1A72353448A0094C600 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		54B8E1A9235347D00094C600 /* Extension+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Encodable.swift"; sourceTree = "<group>"; };
+		54B8E1AB23534AC70094C600 /* PostManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManagerError.swift; sourceTree = "<group>"; };
 		54F057EC2349CC4000B60AED /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		54F057F12349D41E00B60AED /* Extension+UIviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIviewController.swift"; sourceTree = "<group>"; };
 		54F057F42349EA0300B60AED /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -84,9 +110,6 @@
 			children = (
 				542CE2302347476C0047E959 /* .gitignore */,
 				542CE24923476A520047E959 /* GoogleService-Info.plist */,
-				54F057F32349E9E000B60AED /* Managers */,
-				54F057F02349D3F400B60AED /* Extensions */,
-				54F057EB2349CC2700B60AED /* Models */,
 				542CE21D234746D90047E959 /* InstaFake */,
 				542CE21C234746D90047E959 /* Products */,
 				3672D1EE50AFEE7FBD0916AB /* Pods */,
@@ -106,9 +129,14 @@
 			isa = PBXGroup;
 			children = (
 				542CE21E234746D90047E959 /* AppDelegate.swift */,
+				546BF679235314320083B2ED /* Protocols */,
+				54F057F32349E9E000B60AED /* Managers */,
+				54F057F02349D3F400B60AED /* Extensions */,
+				54F057EB2349CC2700B60AED /* Models */,
 				542CE234234749110047E959 /* Routers */,
 				542CE23523474D3F0047E959 /* Screens */,
 				542CE23B23474E400047E959 /* Resources */,
+				546BF67423530A3F0083B2ED /* CustomViews */,
 			);
 			path = InstaFake;
 			sourceTree = "<group>";
@@ -129,6 +157,7 @@
 				54F057FE234B479300B60AED /* LoginViewController */,
 				542CE244234763670047E959 /* RegisterViewController */,
 				54F05803234B76B500B60AED /* FeedViewController */,
+				546BF683235324FE0083B2ED /* CreatePostViewController */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -161,12 +190,41 @@
 			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
+		546BF67423530A3F0083B2ED /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				546BF67523530AD80083B2ED /* UserHeaderView.xib */,
+				546BF67723530CBD0083B2ED /* UserHeaderView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		546BF679235314320083B2ED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				546BF67A235314470083B2ED /* NibLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		546BF683235324FE0083B2ED /* CreatePostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54B8E19F235335C20094C600 /* CreatePostViewController.swift */,
+				54B8E1A0235335C20094C600 /* CreatePostViewController.xib */,
+			);
+			path = CreatePostViewController;
+			sourceTree = "<group>";
+		};
 		54F057EB2349CC2700B60AED /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				54F057EC2349CC4000B60AED /* RegisterModel.swift */,
 				54F057F6234B3DE100B60AED /* RegisterError.swift */,
 				54F057F8234B446E00B60AED /* AuthError.swift */,
+				54B8E1A72353448A0094C600 /* Post.swift */,
+				54B8E1AB23534AC70094C600 /* PostManagerError.swift */,
+				5430647323536382005DD7A3 /* StorageManagerError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				54F057F12349D41E00B60AED /* Extension+UIviewController.swift */,
+				546BF67C235316370083B2ED /* Extension+UIView.swift */,
+				54B8E1A9235347D00094C600 /* Extension+Encodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +243,9 @@
 			isa = PBXGroup;
 			children = (
 				54F057F42349EA0300B60AED /* AuthManager.swift */,
+				54B8E1A32353375C0094C600 /* PostManager.swift */,
+				54B8E1A523533BBE0094C600 /* FirebaseManager.swift */,
+				5430647123535D79005DD7A3 /* SecureStorageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -273,11 +336,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546BF67623530AD80083B2ED /* UserHeaderView.xib in Resources */,
 				542CE23923474D620047E959 /* ViewController.xib in Resources */,
 				542CE2482347638A0047E959 /* RegisterViewController.xib in Resources */,
 				54F05802234B76A600B60AED /* FeedViewController.xib in Resources */,
 				542CE2312347476C0047E959 /* .gitignore in Resources */,
 				542CE229234746DA0047E959 /* LaunchScreen.storyboard in Resources */,
+				54B8E1A2235335C20094C600 /* CreatePostViewController.xib in Resources */,
 				542CE226234746DA0047E959 /* Assets.xcassets in Resources */,
 				54F057FD234B478500B60AED /* LoginViewController.xib in Resources */,
 				542CE24A23476A530047E959 /* GoogleService-Info.plist in Resources */,
@@ -333,16 +398,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5430647423536382005DD7A3 /* StorageManagerError.swift in Sources */,
 				542CE23823474D620047E959 /* ViewController.swift in Sources */,
+				54B8E1A42353375C0094C600 /* PostManager.swift in Sources */,
+				546BF67823530CBD0083B2ED /* UserHeaderView.swift in Sources */,
+				54B8E1A1235335C20094C600 /* CreatePostViewController.swift in Sources */,
+				546BF67D235316370083B2ED /* Extension+UIView.swift in Sources */,
 				54F057F52349EA0300B60AED /* AuthManager.swift in Sources */,
 				542CE2472347638A0047E959 /* RegisterViewController.swift in Sources */,
 				54F057ED2349CC4000B60AED /* RegisterModel.swift in Sources */,
+				5430647223535D79005DD7A3 /* SecureStorageManager.swift in Sources */,
 				54F057F9234B446E00B60AED /* AuthError.swift in Sources */,
 				542CE21F234746D90047E959 /* AppDelegate.swift in Sources */,
 				542CE2332347490D0047E959 /* MainRouter.swift in Sources */,
 				54F057F22349D41E00B60AED /* Extension+UIviewController.swift in Sources */,
+				54B8E1A623533BBE0094C600 /* FirebaseManager.swift in Sources */,
+				546BF67B235314470083B2ED /* NibLoadable.swift in Sources */,
+				54B8E1AC23534AC70094C600 /* PostManagerError.swift in Sources */,
 				542CE23D234761740047E959 /* StartRouter.swift in Sources */,
 				54F057F7234B3DE100B60AED /* RegisterError.swift in Sources */,
+				54B8E1A82353448A0094C600 /* Post.swift in Sources */,
+				54B8E1AA235347D00094C600 /* Extension+Encodable.swift in Sources */,
 				54F05801234B76A600B60AED /* FeedViewController.swift in Sources */,
 				54F057FC234B478500B60AED /* LoginViewController.swift in Sources */,
 			);

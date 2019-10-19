@@ -44,13 +44,13 @@ class LoginViewController: UIViewController {
         }
         
         ARSLineProgress.show()
-        Authmanager.shared.signIn(with: email, and: password) { [weak self] (result) in
+        Authmanager.shared.signIn(with: email, and: password) { (result) in
             ARSLineProgress.hide()
             switch result {
             case .success(_):
-                self?.showAlert(with: "Успех!", and: "Авторизация прошла успешно!")
+                StartRouter.shared.routeAfterSuccessAuth(from: self)
             case .failure(let error):
-                self?.showAlert(with: "error", and: error.localizedDescription)
+                self.showAlert(with: "error", and: error.localizedDescription)
             }
         }
         

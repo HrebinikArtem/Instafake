@@ -11,17 +11,25 @@ import FirebaseStorage
 import FirebaseDatabase
 import FirebaseAuth
 
-class Authmanager {
+class Authmanager: FirebaseManager {
     static let shared = Authmanager()
-    private init() {}
+    
+    private override init() {}
     
     var curentUser: User?
     
-    private var sourceRef: DatabaseReference {
-        return Database.database().reference()
-    }
-    
     private let auth = Auth.auth()
+    
+    
+    func signInIfNeeded() {
+        let credentials = SecureStorageManager.shared.loadFromKeychain()
+        
+        guard let email = credentials.email, let password = credentials.password else {
+            return
+        }
+        
+        signIn(with: email, and: password) {_ in}
+    }
     
     func signIn(with email: String, and password: String,  completion: @escaping (Result<Any, Error>)-> Void) {
         
@@ -54,27 +62,26 @@ class Authmanager {
             return
         }
         
-        let usersRef = sourceRef.child(Keys.users.rawValue)
-        
+        let id = model.id
         auth.createUser(withEmail: email, password: password) { (result, error) in
           
             if let error = error {
                 completion(.failure(error))
-            
-            } else if let _ = result {
-                usersRef.child(model.id).setValue(model.dict)
-                completion(.success(()))
-            
-            } else {
-                completion(.failure(RegisterError.unknownError))
+                return
             }
+            
+            guard let res = result else {
+                completion(.failure(RegisterError.unknownError))
+                return
+            }
+            
+            self.curentUser = res.user
+            var dict = model.dict
+            dict["id"] = id
+            self.usersRef.child(res.user.uid).setValue(model.dict)
+            completion(.success(()))
         }
     }
 }
 
-extension Authmanager {
-    private enum Keys: String {
-        case users
-    }
-}
 

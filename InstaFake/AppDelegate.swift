@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let router = MainRouter()
-        router.root(&window)
+        MainRouter.shared.root(&window)
         
         FirebaseApp.configure()
-        
+        Authmanager.shared.signInIfNeeded()
+//        SecureStorageManager.shared.eraseUserDataIfNeeded()
         return true
     }
 

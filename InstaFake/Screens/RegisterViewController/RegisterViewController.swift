@@ -52,15 +52,22 @@ class RegisterViewController: UIViewController {
         }
         
         ARSLineProgress.show()
-        Authmanager.shared.register(with: registerModel) { [weak self] result in
-        
+        Authmanager.shared.register(with: registerModel) { result in
             ARSLineProgress.hide()
             
             switch result {
             case .success(_):
-                self?.showAlert(with: "Успех!", and: "Вы успешно зарегестрированы!")
+                StartRouter.shared.routeAfterSuccessAuth(from: self)
+                SecureStorageManager.shared.save(email: self.registerModel.email, password: self.registerModel.password, completion: { (res) in
+                    switch res {
+                    case .success(_):
+                        print("keycain saved - success ")
+                    case .failure(let err):
+                        print(err.localizedDescription)
+                    }
+                })
             case .failure(let error):
-                self?.showAlert(with: "Error!", and: "Descrpiption:" + error.localizedDescription)
+                self.showAlert(with: "Error!", and: "Descrpiption:" + error.localizedDescription)
             }
         }
     }
