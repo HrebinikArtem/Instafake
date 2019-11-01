@@ -33,6 +33,7 @@ class Authmanager: FirebaseManager {
     
     func signIn(with email: String, and password: String,  completion: @escaping (Result<Any, Error>)-> Void) {
         
+        
         auth.signIn(withEmail: email, password: password) { (authDataResult, error) in
             
             if let error = error {

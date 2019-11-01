@@ -35,6 +35,22 @@ final class PostManager: FirebaseManager {
             completion(.success(()))
         }
     }
+    
+    func loadingAllPosts(completion: @escaping (Result<[Post], PostManagerError>)-> Void) {
+        usersRef.observe(.value) { (snapshot) in
+            var result:[Post] = []
+            
+            guard let value = snapshot.value as? [[AnyHashable:Any]] else {
+                completion(.failure(.postNotExist))
+                return
+            }
+            
+            for element in value {
+                let posts = element[Keys.posts.rawValue] as? [[AnyHashable: Any]]
+                
+            }
+        }
+    }
 }
 
 extension PostManager {

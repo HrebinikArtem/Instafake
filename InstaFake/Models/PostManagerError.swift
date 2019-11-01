@@ -11,6 +11,7 @@ import Foundation
 enum PostManagerError {
     case notExistError
     case unknownError
+    case postNotExist
 }
 
 extension PostManagerError: LocalizedError {
@@ -20,6 +21,8 @@ extension PostManagerError: LocalizedError {
             return NSLocalizedString("Post_model_not_dictionary", comment: "")
         case .unknownError:
             return NSLocalizedString("server_error", comment: "")
+        case .postNotExist:
+            return NSLocalizedString("post_not_exist", comment: "")
         }
     }
 }
